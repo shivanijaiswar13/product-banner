@@ -18,19 +18,59 @@ body{
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
+    background: url(images/bgimage.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .wrapper::-webkit-scrollbar{
     width: 0;
 }
 .wrapper .item{
-    min-width: 500px;
-    height: 500px;
-    /* line-height: 110px; */
+    min-width: 450px;
+    height: 450px;
+    line-height: 30px;
     text-align: center;
     background-color: #ddd;
     margin-right: 2px;
 }
 .item .content{
     background: #b97d7d;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.wrapper .item1{
+    min-width: 450px;
+    height: 450px;
+    background-color: #ddd;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.item1 .section1{
+    width: 250px;
+    height: 250px;
+    background: url(images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.item1 .section2{
+    width: 250px;
+    height: 250px;
+    background: url(images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.item1 .section3{
+    width: 250px;
+    height: 250px;
+    background: url(images/image3.jpg);
+    background-size: cover;
+    background-position: center;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
