@@ -11,6 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
     max-height: 80%;
@@ -18,9 +19,10 @@ body{
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    background: url(images/bgimage.jpg);
+    background: url(images/background.jpg);
     background-size: cover;
     background-position: center;
+    text-transform: capitalize;
 }
 .wrapper::-webkit-scrollbar{
     width: 0;
@@ -28,19 +30,69 @@ body{
 .wrapper .item{
     min-width: 450px;
     height: 450px;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
-    background-color: #ddd;
+    background-color: transparent;
     margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* .wrapper .item .part1{
+    width: 50px;
+    height: 50px;
+} */
+.wrapper .item .part1 img{
+    width: 100px;
+}
+.wrapper .item .part1 h1{
+    font-size: 40px;
+    line-height: 35px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.wrapper .item .part1 span{
+    color: #a51919ec;
+}
+.wrapper .item .part1 p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 10px;
+    color: #333;
+}
+.wrapper .item .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.wrapper .item .part1 button{
+    margin-top: 10px;
+    padding:7px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color:#a51919ec;
+    color: #fff;
 }
 .item .content{
-    background: #b97d7d;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: #b8d4f2;
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.item img{
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
 }
 .wrapper .item1{
     min-width: 450px;
     height: 450px;
-    background-color: #ddd;
+    background-color: transparent;
     margin-right: 2px;
     display: flex;
     flex-direction: column;
